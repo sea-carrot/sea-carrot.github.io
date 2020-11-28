@@ -1,0 +1,75 @@
+
+body {
+	background: #758;
+	font-family: tahoma;
+	margin: 10px;
+
+}
+
+h1{
+	text-align: center;
+	color: #122;
+}
+header {
+	background: #588;
+	color: #997;
+	margin: 10px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+header h1 {
+	margin:5px;
+	text-align: center;
+}
+
+nav ul{
+	margin: 10px;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style-type:none;
+	padding: 5px 20px;
+	margin: 5px;
+	background: pink;
+	border-radius: 5px;
+
+}
+
+a {
+	color: #000;
+	font-family: arial;
+	margin: 10px;
+}
+
+.row {
+	clear:both;
+}
+
+.col {
+	float: left;
+	border-radius: 5px;
+	background: #686;
+	margin: 1%;
+	width: 25%;
+
+
+
+}
+
+footer {
+	clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+

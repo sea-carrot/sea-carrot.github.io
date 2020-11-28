@@ -1,0 +1,61 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>My70sCinema</title>
+	
+</head>
+
+
+<body>
+<h1>My 70s Cinema</h1>
+
+<header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="page2.html">About</a></li>
+			<li><a href="#">Info</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class = "row">
+	
+	<div class="col">col3</div>
+
+</div>
+
+<iframe src="#fullink"  width="579" height="500" frameborder="0" allow="autoplay"></iframe>
+
+<p>Date/Time: <span id="datetime"></span></p>
+
+<p>HOURS: <span id="totaltime"></span></p>
+
+<a id = "fullink" href ="#"> Here </a>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+var seconds = dt.getSeconds();
+var mins = dt.getMinutes()*60;
+var hours = dt.getHours()*60*60;
+document.getElementById("totaltime").innerHTML = hours+mins+seconds;
+str1 = "https://www.youtube.com/embed/xmGaAjeqaBQ?start="
+str2 = hours+mins+seconds
+str3 = "&autoplay=1&loop=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1"
+document.getElementById("fullink").href = str1.concat(str2, str3);
+</script>
+
+
+
+
+
+
+<footer>®2020 70s Cinema</footer>
+
+</body>
+</html>
